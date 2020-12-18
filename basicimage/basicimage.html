@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            * {
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            header {
+                text-align:center;
+                padding:1vh;
+                color:rgb(255, 0, 0);
+            }
+            body {
+                background:#d62525;
+            }
+            header h1 {
+                color:#000000;
+                padding:2vh;
+                width:60%;
+                margin:1vh auto;
+                border-radius:12px;
+            }
+            nav {
+                background:#141414;
+                color:white;
+                padding:2vh;
+            }
+            footer {
+                background:#000000;
+                color:white;
+                padding:2vh;
+                min-height:15vh;
+            }
+            .container {
+                min-height:75vh;
+                width:80%;
+                margin:1vh auto;
+            }
+            .jumbotron img {
+              width: 100%;
+              height: auto;
+              display:block;
+              filter: grayscale(100%) blur(.5px) brightness(65%);
+           border-radius: 12px;
+            }
+            .jumbotron {
+              position: relative;
+              width: 100%;
+              color: rgb(255, 255, 255);
+              text-align: center;
+            }
+            .overlay{
+              height:100%;
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              align-self: center;
+              left:0;
+              display:flex;
+              justify-content:center;
+              align-items: center;
+              flex-direction:column;
+              background:rgba(0, 0, 0, 0.35);
+              border-radius:12px;
+            }
+            .overlay h3{
+              font-size: 3rem;
+            margin: 1rem;
+            }
+            .overlay p{
+              font-size:1.5;
+            }
+            .flex-container{
+              display:flex;
+              flex-wrap:wrap;
+              justify-content: flex-start;
+              align-items: stretch;
+              gap: 2rem;
+              padding: 2rem;
+              background:rgb(218, 218, 218);
+              margin:1vh auto;
+              
+              
+            }
+            .flex-item{
+              flex:0 0 calc(100%/3 - 1.34rem);
+              outline: 1px rgb(180, 26, 26) solid;
+              box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.966);
+            }
+            .flex-item h3{
+              padding: 2vh;
+              background-color:rgb(0, 0, 0);
+              color:white;
+            }
+            .flex-item p{
+              padding:2vh;
+              line-height:1.5rem;
+            }
+            .media img{
+              width:100%;
+              display:block;
+            }
+        </style>
+        <title>Basic Image Gallery</title>
+    </head>
+    
+    <body>
+        <header>
+          &nbsp;
+        </header>
+        <nav>
+            Placeholder
+        </nav>
+        
+        <div class="container">
+      <div class="jumbotron">
+          <img src="images/imagegallery.png" alt="let it snow" title="jumbo image">
+          <div class ="overlay">
+            <h3>Basic Image Gallery</h3>
+              <p>
+                Mohammed Ullah<br>
+                Web 1, 3rd<br>
+                11/18/20
+            </p>
+            
+        </div>
+            
+        </div>
+            <!-- Write Assignment code under here-->
+            <div class="flex-container">
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/madara.jpg" alt="#">
+                </div>
+                <h3>Madara</h3>
+                <p>One of the strogest shinobi in history. Took on a whole army by himself.</p>
+              </div>
+            
+            
+ 
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/kaguya.png" alt="#">
+                </div>
+                <h3>Kaguya</h3>
+                <p>The strogest charactor in the Naruto franchise. Has the ability to change dimentions in an instant.</p>
+              </div>
+            
+            
+
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/sage.png" alt="#">
+                </div>
+                <h3>Sage of six path</h3>
+                <p>The creator of the tailed beasts. Took care and raised the tailed beast by himself.</p>
+              </div>
+            
+  
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/hashirama.jpg" alt="#">
+                </div>
+                <h3>Hashirama</h3>
+                <p>The second strongest hokage in history. Built the leaf village with Madara.</p>
+              </div>
+            
+
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/jiria.jpg" alt="#">
+                </div>
+                <h3>Jiria</h3>
+                <p>A legend that is apart of the 3 legendary sanin. Had very successful pupils including Naruto and Minito.</p>
+              </div>
+            
+            
+
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/kakashi.jpg" alt="#">
+                </div>
+                <h3>Kakashi</h3>
+                <p>Trained by the forth hokage. He was a part of the ambu and excelled in every field of fighting. </p>
+              </div>
+            
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/naruto.jpg" alt="#">
+                </div>
+                <h3>Naruto</h3>
+                <p>The most determined child in the franchise. Is the main charactor that grew up in front of views eyes from birth to death.</p>
+              </div>
+            
+
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/obito.jpg" alt="#">
+                </div>
+                <h3>Obito</h3>
+                <p>Apart of team Minito. Started the 3rd great ninja war and out smarted almost everyone in the franchise.</p>
+              </div>
+            
+
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/saskue.jpg" alt="#">
+                </div>
+                <h3>Saskue</h3>
+                <p>A man who was filled with hate and left the hidden leaf at a young age for revenge. Took him multiple years to overcome his vengence and came back to the village after 3 years.</p>
+              </div>
+            
+            
+              <div class="flex-item">
+                <div class="media">
+                  <img src="images/itachi.jpg" alt="#">
+                </div>
+                <h3>Itachi</h3>
+                <p>The smartest and most clever ninja. Is an undercover nija for the hidden leaf.</p>
+              </div>
+            
+            </div><!-- end flex container-->
+            
+            
+            
+            
+            
+            
+            
+        </div><!-- End of container -->
+        <footer>
+            Placeholder
+            
+        </footer>
+
+    <!-- End of page code, but be sure to copy closing tags below-->
+    </body>
+</html>
