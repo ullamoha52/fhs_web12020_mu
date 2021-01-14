@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@keyframes fadeinanimation{
+    0%{
+        opacity: 0;  
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+header {
+    display: flex;
+    padding:1vh;
+}
+.iconbar{
+    flex-basis: 50%;
+    font-size: 2rem;
+}
+i{
+    margin: 2h;
+    color: rgb(8, 8, 8);
+}
+.headercontact {
+    font-size: 1rem;
+    flex-basis: 50%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+}
+.headercontact a {
+    color: #ffffff; 
+}
+/* Nav CSS*/
+body {
+    background: rgba(29, 82, 161, 0.966);
+}
+nav {
+    background:#f7f7f7;
+    color:rgb(83, 110, 231);
+    display: flex;
+    height: 3rem;
+    overflow: hidden;
+}
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+nav li{
+    display: inline;
+}
+nav li a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-right:1px solid rgb(77, 73, 73);
+    transition: background-color .25s ease;
+}
+nav li a:hover{
+    background-color: rgb(179, 168, 168);
+    text-decoration: underline;
+}
+nav img{
+    display: inline;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 60px;
+    margin-right: 1rem;
+}
+footer {
+    background:#f7f7f7;
+    color:rgb(0, 0, 0);
+    padding:2vh;
+    min-height:15vh;
+}
+.container {
+    min-height:75vh;
+    background:rgb(227, 231, 238);
+    width:80%;
+    margin:auto;
+    padding:2vh;
+}
+/*index main page*/
+.jumbotron {
+    position: relative;
+    width: 100%;
+    color: rgb(255, 253, 253);
+    text-align: center;
+}
+.overlay {
+height: 100%;
+width: 100%;
+position: absolute;
+bottom: 0;
+align-self: center;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; 
+animation: fadeinanimation ease 8s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+.overlay h3 {
+    font-size: 5rem;
+    margin: 1rem;
+}
+.overlay p {
+    font-size: 2.5rem;
+}
+.jumbotron img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(60%);
+}
+/*code for all buttons*/
+.jumbotron a, .text a {
+    font-size: 1.2rem;
+    display: block;
+    max-width: 300px;
+    text-align: center;
+    padding: .6rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(33, 122, 255, 0.966);
+    margin: 1rem auto;
+    border-radius: 6px;
+    border: 1px solid rgb(26, 66, 151);
+    transition: padding .25s ease, background-color .5s ease;
+}
+.jumbotron a:hover, .text a:hover {
+    padding: 1rem;
+    background-color: rgb(16, 19, 151);
+    color: white;
+}
+/*Code for Jumbotron buttons*/
+.jumbotron a {
+    font-size: 2rem;
+    background-color: rgb(39, 70, 170);
+    color: rgb(255, 255, 255);
+    min-width: 25%;
+}
+/*index row code*/
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid rgb(11, 12, 12);
+    margin-bottom: .5rem;
+    overflow: hidden;
+}
+.row .media {
+    height: 100%;
+    flex-basis: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.media img {
+    display: block;
+    height: 90%;
+}
+.media i {
+font-size: 28vh;
+}
+.row .text {
+    padding: 1rem;
+    flex-basis: 60%;
+    font-size: 1,2rem;
+    line-height: 1.8rem;
+}
+.text p {
+    width: 80%;
+    margin: 1rem auto;
+}
+.text h3 {
+font-size: 2.5rem;
+text-align: center;
+margin: 1rem;
+}
